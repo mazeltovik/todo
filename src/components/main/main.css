@@ -7,31 +7,31 @@
 }
 
 body{
-    /* background-image: url(images/bg-desktop-dark.jpg); */
+    background-image: url(images/bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-size:100%;
     background-color: #181824;
     font-family: 'Josefin Sans';
 }
 
-.mainContainer__uh5-E{
+.mainContainer{
     display: grid;
     width:40vw;
     margin: 0 auto;
     padding-top: 7rem;    
 }
 
-.logo__26_t-{
+.logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo__26_t- img{
+.logo img{
     cursor: pointer;
 }
 
-.logo__26_t- h1{
+.logo h1{
     font-style: normal;
     font-weight: 700;
     font-size: 3rem;
@@ -40,7 +40,7 @@ body{
     letter-spacing: 0.5rem;
 }
 
-.add_todo__ZIHgD{
+.add_todo{
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -48,7 +48,7 @@ body{
     padding-top: 2rem;
 }
 
-.fa-plus___6j0c{
+.fa-plus{
     position: absolute;
     cursor: pointer;
     opacity: 70%;
@@ -56,7 +56,7 @@ body{
     left:0.5rem;
 }
 
-.add_todo__ZIHgD input{
+.add_todo input{
     font-family:'Josefin Sans';
     padding-left: 2rem;
     width: 100%;
@@ -70,7 +70,7 @@ body{
     color:  hsl(236, 33%, 92%);
 }
 
-.add_todo__ZIHgD svg{
+.add_todo svg{
     height: 1rem;
     position: absolute;
     cursor: pointer;
@@ -79,7 +79,7 @@ body{
     display: none;
 }
 
-#all_tasks__2wVKi{
+#all_tasks{
     width: 40vw;
     height: 50vh;
     overflow: auto;
@@ -90,19 +90,7 @@ body{
     border-top-right-radius: 0.5rem;
     box-shadow: 0px 10px 14px 5px rgba(34, 60, 80, 0.2);
 }
-#active_tasks__1E5DX{
-    width: 40vw;
-    height: 50vh;
-    overflow: auto;
-    overflow-x: hidden;
-    margin-top: 1rem;
-    background-color: #25273c;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    box-shadow: 0px 10px 14px 5px rgba(34, 60, 80, 0.2);
-}
-
-#completed_tasks__oWZ2D{
+#active_tasks{
     width: 40vw;
     height: 50vh;
     overflow: auto;
@@ -114,23 +102,35 @@ body{
     box-shadow: 0px 10px 14px 5px rgba(34, 60, 80, 0.2);
 }
 
-.check_todo__2dTFp{
+#completed_tasks{
+    width: 40vw;
+    height: 50vh;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 1rem;
+    background-color: #25273c;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 0px 10px 14px 5px rgba(34, 60, 80, 0.2);
+}
+
+.check_todo{
     display: flex;
     gap:0.5rem;
     align-items: center;
     padding-left: 0.5rem;
 }
 
-.check_todo__2dTFp p{
+.check_todo p{
     word-wrap: break-word;
     width: 85%;
 }
 
-.todo__-SfCt ul li:first-child{
+.todo ul li:first-child{
     width: 87%;
 }
 
-.circleCheck__31FQx{
+.circleCheck{
     width: 2rem;
     height: 2rem;
     border: 1px solid hsl(234, 11%, 52%);
@@ -141,7 +141,7 @@ body{
     margin-bottom: 0.2rem;
 }
 
-.checkTrue__3sukv{
+.checkTrue{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -166,14 +166,14 @@ body{
  transition: 0.3s;
 }
 
-.empty__1S5AV p{
+.empty p{
     color:hsl(236, 33%, 92%) ;
     text-align: center;
     padding-top: 5rem;
 }
 
 
-.containerTaskDark__3ZxdV{
+.containerTaskDark{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,7 +187,7 @@ body{
 
 
 
-.containerTaskLight__1TUWt{
+.containerTaskLight{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,12 +206,12 @@ body{
 
 
 
-.containerTaskImg__1euwI{
+.containerTaskImg{
     padding-right: 1.5rem;
     cursor: pointer;
 }
 
-.footer__1dZdZ{
+.footer{
     display: flex;
     background-color:#25273c;
     align-items: center;
@@ -224,25 +224,25 @@ body{
     box-shadow: 0px 10px 14px 5px rgba(34, 60, 80, 0.2);
 }
 
-.routes__11wRc ul{
+.routes ul{
     display: flex;
     list-style-type: none;
     gap:1rem;
 }
-.routes__11wRc ul li a{
+.routes ul li a{
     text-decoration: none;
 }
-.routes__11wRc ul li a:hover{
+.routes ul li a:hover{
     color:#5778c9;
     transition: 0.3s;
 }
-.active__1S3M7{
+.active{
     color:#5778c9;
     border-bottom: 1px solid #5778c9;
 }
 
 
-.footerClear__1lixi:hover{
+.footerClear:hover{
     color:#1d43a5;
     transition: 0.3s;
     cursor: pointer;
@@ -252,14 +252,14 @@ body{
 /*mobile view */
 @media only screen and (max-width : 1200px){
     body{
-        /* background-image: url(images/bg-mobile-dark.jpg); */
+        background-image: url(images/bg-mobile-dark.jpg);
         background-repeat: no-repeat;
         background-size:100%;
         background-color: #181824;
         
     }
 
-    .mainContainer__uh5-E{
+    .mainContainer{
         display: grid;
         grid-template-columns: 1fr;
         width:95vw;
@@ -267,32 +267,32 @@ body{
         padding-top: 1.5rem;    
     }
 
-    #all_tasks__2wVKi{
+    #all_tasks{
         width: 95vw;
         height: 50vh;
     }
 
-    .check_todo__2dTFp p{
+    .check_todo p{
         width: 85%;
     }
 
-    .todo__-SfCt ul li:first-child{
+    .todo ul li:first-child{
         width: 87%;
     }
 
-    #active_tasks__1E5DX{
+    #active_tasks{
         width: 95vw;
         height: 50vh;
     }
 
-    #completed_tasks__oWZ2D{
+    #completed_tasks{
         width: 95vw;
         height: 50vh;
     }
 
 
 
-    .footer__1dZdZ{
+    .footer{
         flex-direction: column;
         gap: 1rem;
         height: 7rem;
